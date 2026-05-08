@@ -1,2 +1,3 @@
 @import "tailwindcss";
-
+@import "../stylesheets/application.css";
+@tailwind utilities;
