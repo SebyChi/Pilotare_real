@@ -1,7 +1,7 @@
 <nav class = "fixed w-full top-0">
-  <div class = "flex justify-between">
-    <%= link_to "Physics", physics_path()%>
-    <%= link_to "Biology", biology_path()%>
-    <%= link_to "Chemistry", chemistry_path()%>
+  <div class = "flex justify-between p-4">
+    <%= physics_page? %>
+    <%= biology_page?%>
+    <%= chemistry_page?%>
   </div>
 </nav>
