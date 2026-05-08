@@ -1,0 +1,7 @@
+.navi_links{
+  @apply font-bold;
+}
+.navi_links:hover,
+.navi_links:focus{
+  @apply scale-[1.2] text-green-300;
+}
