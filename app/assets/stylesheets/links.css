@@ -1,5 +1,5 @@
 .nav_links{
-  @apply font-bold text-xl;
+  @apply font-bold text-xl text-(--ev-links);
 }
 .nav_links:hover,
 .nav_links:focus{
