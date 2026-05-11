@@ -8,3 +8,11 @@
 .text_box{
   @apply max-w-4xl mx-auto px-4 py-8 bg-amber-600 rounded-2xl shadow-2xl;
 }
+
+.nav_bar{
+  @apply fixed w-full top-0 bg-(--ev-dark) z-50;
+}
+
+.nav_container{
+  @apply flex items-center p-4;
+}
