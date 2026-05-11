@@ -1,5 +1,5 @@
 .navi_links{
-  @apply font-bold;
+  @apply font-bold text-xl;
 }
 .navi_links:hover,
 .navi_links:focus{

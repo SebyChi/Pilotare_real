@@ -1,4 +1,5 @@
 @import "tailwindcss";
 @import "../stylesheets/application.css";
 @import "../stylesheets/links.css";
+@import "../stylesheets/page_format.css";
 @tailwind utilities;
