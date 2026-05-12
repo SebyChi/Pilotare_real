@@ -1,6 +1,8 @@
 <nav class="nav_bar">
   <div class="nav_container">
-    <%= image_tag "ev_logo.png", alt: "Descriere poza",class: "w-32 h-auto" %>
+    <%= link_to main_path do %>
+      <%= image_tag "ev_logo.png", alt: "Descriere poza",class: "w-32 h-auto transform transition-all hover:scale-[1.03] hover:-translate-y-3" %>
+    <%end%>
     <% unless request.path == main_path%>
       <h1 class="nav_title">Energia verde: Viitorul incepe astazi</h1>
     <%end%>
