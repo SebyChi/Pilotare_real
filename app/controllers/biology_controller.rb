@@ -1,0 +1,2 @@
+class BiologyController < ApplicationController
+end
