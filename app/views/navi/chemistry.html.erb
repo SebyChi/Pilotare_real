@@ -1,5 +1,10 @@
+<div class="flex items-start gap-20">
+
+  <div class="sticky top-30 mt-10 -ml-20">
+    <%= link_to "Back", :back, class: "inline-block nav_links text-(--ev-pbg)! hover:text-(--ev-dark)! transition-all transform hover:scale-[1.1]" %>
+  </div>
 <section class="max-w-10xl mx-auto px-6 py-16">
-  <div class="flex flex-wrap justify-center gap-6">
+  <div class="flex flex-wrap justify-center gap-6 page_animation">
     
     <%= link_to bio_fuel_path, class: "text_box cards_design" do%>
       <h3 class="headers">Biocombustibilii</h3>
@@ -41,3 +46,4 @@
 
   </div>
 </section>
+</div>

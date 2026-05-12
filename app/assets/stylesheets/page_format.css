@@ -20,6 +20,18 @@ h2{
   }
 }
 
+@keyframes popOut{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
+  }
+}
+
+.logo_animation{
+  animation: popOut 1.2s ease-out infinite alternate;
+}
 .page_animation {
   animation: fadeUp 1s ease-out forwards;
 }
