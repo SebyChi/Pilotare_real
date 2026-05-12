@@ -1,5 +1,9 @@
 <nav class="nav_bar">
   <div class="nav_container">
+    <%= image_tag "ev_logo.png", alt: "Descriere poza",class: "w-32 h-auto" %>
+    <% unless request.path == main_path%>
+      <h1 class="nav_title">Energia verde: Viitorul incepe astazi</h1>
+    <%end%>
     <div class="links_container">
       <%= physics_page? %>
       <%= biology_page? %>

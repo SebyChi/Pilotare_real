@@ -1,6 +1,6 @@
 module ApplicationHelper
   def return_to_main
-    link = link_to "Main", main_path(), class: "navi_links"
+    link = link_to "Main", main_path(), class: "nav_links"
     link.html_safe
   end
 
