@@ -1,12 +1,12 @@
 <div class="flex items-start gap-20">
 
   <div class="sticky top-30 mt-10 -ml-20">
-    <%= link_to "Back", :back, class: "inline-block nav_links text-(--ev-pbg)! hover:text-(--ev-dark)! transition-all transform hover:scale-[1.1]" %>
+    <%= link_to "Back", main_path, class: "inline-block nav_links text-(--ev-pbg)! hover:text-(--ev-dark)! transition-all transform hover:scale-[1.1]" %>
   </div>
 <section class="max-w-10xl mx-auto px-6 py-16">
-  <div class="flex flex-wrap justify-center gap-6 page_animation">
+  <div class="flex flex-wrap justify-center gap-6">
     
-    <%= link_to bio_fuel_path, class: "text_box cards_design" do%>
+    <%= link_to bio_fuel_path, class: "text_box cards_design page_animation" do%>
       <h3 class="headers">Biocombustibilii</h3>
       <p class="paragraph_layout">
         O alternativă sustenabilă la combustibilii fosili, biocombustibilii sunt obținuți 
@@ -15,7 +15,7 @@
       </p>
     <%end%>
 
-    <%= link_to hydrogen_path, class: "text_box cards_design" do%>
+    <%= link_to hydrogen_path, class: "text_box cards_design page_animation" do%>
       <h3 class="headers">Hidrogenul verde</h3>
       <p class="paragraph_layout">
         Hidrogenul verde este considerat combustibilul viitorului datorită producerii 
@@ -25,7 +25,7 @@
       </p>
     <%end%>
 
-    <%= link_to sun_path, class: "text_box cards_design" do%>
+    <%= link_to sun_path, class: "text_box cards_design page_animation" do%>
       <h3 class="headers">Energia solară</h3>
       <p class="paragraph_layout">
         Energia solară transformă lumina Soarelui într-o sursă curată și 
@@ -35,7 +35,7 @@
       </p>
     <%end%>
 
-    <%= link_to energy_storage_path, class: "text_box cards_design" do%>
+    <%= link_to energy_storage_path, class: "text_box cards_design page_animation" do%>
       <h3 class="headers">Stocarea energiei</h3>
       <p class="paragraph_layout">
         Stocarea energiei permite utilizarea eficientă a electricității produse 
