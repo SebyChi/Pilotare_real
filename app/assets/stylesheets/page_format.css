@@ -1,0 +1,71 @@
+p{
+  @apply text-justify text-(--ev-bg) p-4 text-xl indent-6;
+}
+
+h2{
+@apply font-bold text-left text-2xl text-(--ev-bg) p-4;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    transform: scale(1);
+  }
+}
+
+@keyframes popOut{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
+  }
+}
+
+.logo_animation{
+  animation: popOut 1.2s ease-out infinite alternate;
+}
+.page_animation {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.headers{
+  @apply font-bold text-center text-2xl text-(--ev-bg) p-4;
+}
+
+.paragraph_layout{
+  @apply text-justify text-(--ev-bg) p-4 first-letter:text-4xl first-letter:font-bold indent-6;
+}
+
+.text_box{
+  @apply mx-auto px-4 py-8 bg-(--ev-pbg) rounded-2xl shadow-2xl leading-loose mt-10;
+}
+
+.nav_bar{
+  @apply fixed w-full top-0 bg-(--ev-dark) z-50;
+}
+
+.nav_container{
+  @apply flex items-center p-4;
+}
+
+.nav_title{
+  @apply font-bold text-xl text-(--ev-links);
+}
+
+.cards_design{
+  @apply basis-[450px] max-w-[500px] block transform transition-all duration-300 
+  ease-out hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(0,0,0,0.35)] 
+  hover:bg-emerald-700/90 hover:ring-2 hover:ring-emerald-300;
+}
+
+.image_center{
+  @apply flex items-center justify-center;
+}

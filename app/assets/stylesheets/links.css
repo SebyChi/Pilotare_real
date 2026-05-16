@@ -1,0 +1,11 @@
+.nav_links{
+  @apply font-bold text-xl text-(--ev-links);
+}
+.nav_links:hover,
+.nav_links:focus{
+  @apply scale-[1.2] text-green-300;
+}
+
+.links_container{
+  @apply ml-auto flex gap-10 pr-4;
+}

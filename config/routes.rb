@@ -1,14 +1,32 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
-  # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
-  # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
-  # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
+  get "/physics", to: "navi#physics", as: :physics
+  get "/biology", to: "navi#biology", as: :biology
+  get "/chemistry", to: "navi#chemistry", as: :chemistry
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  controller :chemistry do
+    get "/sun", action: :sun, as: :sun
+    get "/energy_storage", action: :energy_storage, as: :energy_storage
+    get "/hydrogen", action: :hydrogen, as: :hydrogen
+    get "/bio_fuel", action: :bio_fuel, as: :bio_fuel
+  end
+
+  controller :physics do
+    get "/hidro_energy", action: :hidro_energy, as: :hidro_energy
+    get "/solar_energy", action: :solar_energy, as: :solar_energy
+    get "/wind_energy", action: :wind_energy, as: :wind_energy
+    get "/nuclear_energy", action: :nuclear_energy, as: :nuclear_energy
+    get "/geo_thermal_energy", action: :geo_thermal_energy, as: :geo_thermal_energy
+    get "/tidal_energy", action: :tidal_energy, as: :tidal_energy
+  end
+
+  controller :biology do
+    get "/biomass_sustainability", action: :biomass_sustainability, as: :biomass_sustainability
+    get "/biofuel_sustainability", action: :biofuel_sustainability, as: :biofuel_sustainability
+    get "/energy_and_climate-change", action: :climate_change, as: :climate_change
+  end
+
+
+  root "application#main", as: :main
 end

@@ -1,0 +1,39 @@
+<div class="flex items-start gap-20">
+
+  <div class="sticky top-30 mt-10 -ml-20">
+    <%= link_to "Back", main_path, class: "inline-block nav_links text-(--ev-pbg)! hover:text-(--ev-dark)! transition-all transform hover:scale-[1.1]" %>
+  </div>
+
+  <section class="max-w-10xl mx-auto px-6 py-16">
+    <div class="flex flex-wrap justify-center gap-6">
+
+      <%= link_to biomass_sustainability_path, class: "text_box cards_design page_animation" do%>
+        <h3 class="headers">Biomasa-energie din organismele vii</h3>
+        <p class="paragraph_layout">
+          Biomasa reprezintă energia obținută din organisme vii și deșeuri organice precum lemnul, 
+          resturile agricole și deșeurile animale. Materialul prezintă transformarea biomasei în biogaz și bioenergie, 
+          avantajele și dezavantajele utilizării acestei surse regenerabile și impactul asupra mediului și agriculturii.
+        </p>
+      <%end%>
+
+      <%= link_to biofuel_sustainability_path, class: "text_box cards_design page_animation" do%>
+        <h3 class="headers">Sustenabilitatea biocombustibililor</h3>
+        <p class="paragraph_layout">
+          Biocombustibilii reprezintă o alternativă regenerabilă la combustibilii clasici, obținută din 
+          plante și deșeuri organice. Materialul explică modul de producere al biodieselului și bioetanolului,
+          avantajele și dezavantajele utilizării lor și impactul asupra agriculturii, biodiversității și mediului înconjurător.
+        </p>
+      <%end%>
+
+      <%= link_to climate_change_path, class: "text_box cards_design page_animation" do%>
+        <h3 class="headers">Energia verde și schimbările climatice</h3>
+        <p class="paragraph_layout">
+          Energia verde reprezintă una dintre cele mai importante soluții pentru reducerea emisiilor de carbon
+          și combaterea schimbărilor climatice. Documentul analizează impactul poluării asupra ecosistemelor 
+          și sănătății umane, precum și rolul energiilor regenerabile în construirea unui viitor sustenabil.
+        </p>
+      <%end%>
+
+    </div>
+  </section>
+</div>
