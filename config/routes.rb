@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/physics", to: "navi#physics", as: :physics
   get "/biology", to: "navi#biology", as: :biology
   get "/chemistry", to: "navi#chemistry", as: :chemistry
+  get "/summary", to: "navi#summary", as: :summary
 
   controller :chemistry do
     get "/sun", action: :sun, as: :sun
