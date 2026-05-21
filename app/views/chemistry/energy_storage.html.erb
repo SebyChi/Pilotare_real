@@ -1,111 +1,90 @@
 <div class="flex items-start gap-20">
 
   <div class="sticky top-30 mt-10 -ml-20">
-    <%= link_to "Back", :back, class: "inline-block nav_links text-(--ev-pbg)! hover:text-(--ev-dark)! transition-all transform hover:scale-[1.1]" %>
+    <%= link_to "Back", chemistry_path, class: "inline-block nav_links text-black! hover:text-(--ev-dark)! transition-all transform hover:scale-[1.1]" %>
   </div>
+
   <div class="text_box page_animation">
     <h1 class="headers">Stocarea energiei și baterii</h1>
-      <p>
-        Stocarea energiei este captarea energiei produsă la un moment dat pentru a fi utilizată ulterior, reducând dezechilibrele dintre cererea și producția de energie. Un dispozitiv care stochează energie se numește acumulator sau baterie.
-      </p>
-      <p>
-        Energia poate fi stocată sub mai multe forme, inclusiv radiații, energie chimică, potențial gravitațional, potențial electric, electricitate, temperatură ridicată, căldură latentă și energie cinetică.
-      </p>
-      <p>
-        Stocarea energiei implică transformarea energiei din forme greu de stocat în forme mai convenabile din punct de vedere economic și practic.
-      </p>
 
-    <h2>Exemple de stocare a energiei</h2>
-      <p>
-        Exemple comune sunt bateriile telefoanelor mobile, care stochează energie chimică convertibilă în energie electrică, barajele hidrocentralelor care stochează energie potențială gravitațională și sistemele moderne de depozitare a gheții pentru răcire.
-      </p>
+    <p>
+      Stocarea energiei este captarea energiei produsă la un moment dat pentru a fi utilizată ulterior pentru a reduce dezechilibrele dintre cererea şi producţia de energie. Un dispozitiv care stochează energie se numeşte, în general, acumulator sau baterie.
+    </p>
+
+    <p>
+      Aceasta vine sub mai multe forme, inclusiv radiaţii, energie chimică, potenţial gravitaţional, potenţial electric, electricitate, temperatură ridicată, căldură latentă şi energie cinetică. Stocarea energiei implică conversia energiei din forme greu de stocat în forme mai comode sau mai convenabile din punct de vedere economic.
+    </p>
+
+    <p>
+      Exemple comune de stocare a energiei sunt bateriile mobile, care stochează energie sub formă de energie chimică uşor convertibilă în energie electrică pentru a opera un telefon mobil; barajele hidrocentralelor, care stochează energie într-un lac de acumulare ca energie potenţială gravitaţională şi depozitarea gheţii, care stochează gheaţa produsă cu energie mai ieftină pe timp de noapte pentru a satisface cererea maximă de răcire din timpul zilei.
+    </p>
 
     <div class="image_center">
-      <%= image_tag "energy-storage-diagram.png", alt:"Diagram", class:"rounded-xl"%>
+      <%= image_tag "energy-storage-diagram.png", alt:"Diagram", class:"rounded-xl" %>
     </div>
 
-    <h2>Bateriile</h2>
-      <p>
-        Bateriile funcționează pe baza unor reacții chimice care permit transformarea energiei chimice în energie electrică și invers.
-      </p>
-      <p>
-        Cele mai răspândite tipuri de baterii în prezent sunt bateriile litiu-ion, utilizate în telefoane mobile, laptopuri și vehicule electrice. Acestea sunt apreciate pentru densitatea energetică ridicată, durata de viață lungă și eficiența crescută.
-      </p>
-      <p>
-        Totuși, ele prezintă și dezavantaje, precum costuri ridicate de producție, dependența de resurse limitate precum litiul și cobaltul și impactul asupra mediului în procesul de producție și reciclare.
-      </p>
-      <p>
-        Expresia „baterie” provine de la cuplarea în serie a mai multor elemente electrochimice. Există două tipuri principale: baterii primare, de unică folosință, și baterii secundare, adică baterii reîncărcabile.
-      </p>
+    <h2>Bateriile:</h2>
+
+    <p>
+      Bateriile funcționează pe baza unor reacții chimice care permit transformarea energiei chimice în energie electrică și invers. Cele mai răspândite tipuri de baterii în prezent sunt bateriile litiu-ion, utilizate în telefoane mobile, laptopuri și vehicule electrice. Acestea sunt apreciate pentru densitatea lor energetică ridicată, durata de viață relativ lungă și eficiența crescută. Totuși, ele prezintă și dezavantaje, precum costuri ridicate de producție, dependența de resurse limitate (litiu, cobalt) și impactul asupra mediului în procesul de producție și reciclare.
+    </p>
+
+    <p>
+      Expresia „baterie” provine de la cuplarea în serie a mai multor elemente (celule electrochimice și elemente voltaice) expresie care, prin extensie, este folosită şi pentru „bateriile” cu un singur element
+    </p>
+
+    <p>
+      Există două tipuri principale de baterii: baterii primare (baterii de unică folosinţă) şi baterii secundare (baterii reîncărcabile). Acestea din urmă sunt de fapt acumulatori.
+    </p>
 
     <div class="image_center">
-      <%= image_tag "batteries.png", alt: "Batteries", class:"rounded-xl"%>
+      <%= image_tag "batteries.png", alt: "Batteries", class:"rounded-xl" %>
     </div>
 
-    <h2>Funcționarea bateriilor</h2>
-      <p>
-        La baza funcționării unei baterii reîncărcabile se află conversia energiei chimice în energie electrică prin reacții redox de oxidare și reducere.
-      </p>
-      <p>
-        O baterie este alcătuită din trei componente principale: anodul, unde are loc oxidarea, catodul, unde are loc reducerea, și electrolitul, care permite transportul ionilor.
-      </p>
-      <p>
-        În timpul descărcării, anodul cedează electroni printr-o reacție de oxidare, iar aceștia circulă prin circuitul extern către catod, unde sunt acceptați într-o reacție de reducere.
-      </p>
-      <p>
-        În același timp, ionii migrează prin electrolit către catod pentru a menține neutralitatea electrică. Acest mecanism este reversibil și permite reîncărcarea bateriei.
-      </p>
+    <p>
+      La baza funcționării unei baterii reîncărcabile se află conversia energiei chimice în energie electrică prin reacții redox (oxidare-reducere). O baterie este alcătuită din trei componente principale: anodul (electrodul unde are loc oxidarea), catodul (electrodul unde are loc reducerea) și electrolitul (mediul care permite transportul ionilor). În timpul descărcării, anodul cedează electroni printr-o reacție de oxidare, iar aceștia circulă prin circuitul extern către catod, unde sunt acceptați într-o reacție de reducere. În același timp, ionii migrează prin electrolit către catod, unde sunt inserați în structura cristalină a materialului catodic, într-un proces numit intercalare pentru a menține neutralitatea electrică. Acest mecanism este reversibil, permițând reîncărcarea bateriei.
+    </p>
 
     <div class="image_center">
-      <%= image_tag "battery-explained.png", alt:"Batteries explained", class: "rounded-xl"%>
+      <%= image_tag "battery-explained.png", alt:"Batteries explained", class:"rounded-xl" %>
     </div>
 
-    <h2>Bateriile litiu-ion</h2>
-      <p>
-        Un exemplu reprezentativ este bateria litiu-ion. În acest sistem, anodul este de obicei format din grafit, iar catodul din oxizi metalici de litiu, precum LiCoO₂.
-      </p>
-      <p>
-        În timpul descărcării, atomii de litiu din anod sunt oxidați, eliberând electroni și formând ioni Li⁺.
-      </p>
+    <p>
+      Un exemplu reprezentativ este bateria litiu-ion. În acest sistem, anodul este de obicei format din grafit, iar catodul din oxizi metalici de litiu (precum LiCoO₂). În timpul descărcării, atomii de litiu din anod sunt oxidați, eliberând electroni și formând ioni Li⁺.
+    </p>
 
-    <h2>Capacitatea bateriilor</h2>
-      <p>
-        Capacitatea unei baterii reprezintă cantitatea de sarcină electrică ce poate fi stocată și este exprimată în amper-oră (Ah).
-      </p>
-      <p>
-        Datorită reacțiilor chimice din interiorul celulelor, capacitatea unei baterii depinde de condițiile de descărcare și de valoarea curentului.
-      </p>
+    <p>
+      Capacitatea unei baterii este cantitatea de sarcină electrică ce poate fi stocată și se exprimă în Amper oră (Ah). Datorită reacţiilor chimice din cadrul celulelor, capacitatea unei baterii depinde de condiţiile de descărcare precum valoarea curentului.
+    </p>
 
     <div class="image_center">
-      <%= image_tag "battery-calc.png", alt:"Battery calculus", class:"rounded-xl"%>
+      <%= image_tag "battery-calc.png", alt:"Battery calculus", class:"rounded-xl" %>
     </div>
 
-    <h2>Concluzie</h2>
-      <p>
-        Stocarea energiei și bateriile moderne joacă un rol esențial în dezvoltarea tehnologiilor actuale și în integrarea eficientă a surselor regenerabile de energie.
-      </p>
-      <p>
-        Evoluția bateriilor va influența direct viitorul transportului electric, al dispozitivelor inteligente și al sistemelor energetice sustenabile.
-      </p>
+    <h2>Bibliografie</h2>
 
-    <h2>Surse</h2>
-      <p>
-        https://ro.wikipedia.org/wiki/Stocarea_energiei
-      </p>
-      <p>
-        https://ro.wikipedia.org/wiki/Baterie_electric%C4%83
-      </p>
-      <p>
-        https://www.ufinebattery.com/blog/enerything-you-should-know-about-li-ion-battery-capacity/
-      </p>
-      <p>
-        https://en.wikipedia.org/wiki/Electric_battery
-      </p>
-      <p>
-        https://curious.science.org.au/technology-future/batteries
-      </p>
-      <p>
-        “Marea enciclopedie a cunoașterii” – Editura Litera
-      </p>
+    <p>
+      -https://ro.wikipedia.org/wiki/Stocarea_energiei
+    </p>
+
+    <p>
+      -https://ro.wikipedia.org/wiki/Baterie_electric%C4%83
+    </p>
+
+    <p>
+      -https://www.ufinebattery.com/blog/enerything-you-should-know-about-li-ion-battery-capacity/
+    </p>
+
+    <p>
+      -https://en.wikipedia.org/wiki/Electric_battery
+    </p>
+
+    <p>
+      -https://curious.science.org.au/technology-future/batteries
+    </p>
+
+    <p>
+      -- “Marea enciclopedie a cunoasterii” Editura litera
+    </p>
   </div>
 </div>
