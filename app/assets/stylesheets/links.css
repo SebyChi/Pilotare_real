@@ -9,3 +9,15 @@
 .links_container{
   @apply ml-auto flex gap-10 pr-4;
 }
+
+.source_links {
+  @apply text-emerald-500 break-all transition-colors duration-200 no-underline;
+}
+
+.source_links:hover {
+  @apply text-emerald-300;
+}
+
+.back_button{
+  @apply inline-block text-black! hover:text-(--ev-dark)! transition-all transform hover:scale-[1.1];
+}
