@@ -1,96 +1,119 @@
 <div class="flex items-start gap-20">
 
   <div class="sticky top-30 mt-10 -ml-20">
-    <%= link_to "Back", physics_path, class: "inline-block nav_links text-black! hover:text-(--ev-dark)! transition-all transform hover:scale-[1.1]" %>
+    <%= link_to "Back", physics_path, class: "nav_links back_button" %>
   </div>
 
   <div class="text_box page_animation">
     <h1 class="headers">Energia hidroelectrică</h1>
 
     <p>
-      Energia hidroelectrică reprezintă energia obținută prin utilizarea forței apei pentru producerea electricității.
-       Aceasta este una dintre cele mai vechi și mai utilizate surse de energie regenerabilă din lume. Hidrocentralele 
-       transformă energia potențială și cinetică a apei în energie electrică prin intermediul turbinelor și generatoarelor.
+      Energia electrică obținută din apă reprezintă una dintre cele mai importante forme de energie regenerabilă utilizate de omenire. O hidrocentrală este o instalație tehnică ce transformă energia apei în energie electrică, folosind forța gravitației și mișcarea naturală a apei. Această metodă este considerată una dintre cele mai curate și eficiente surse de energie disponibile în prezent.
     </p>
 
-    <p>
-      Principiul de funcționare al unei hidrocentrale este relativ simplu. Apa este acumulată într-un lac de acumulare, 
-      în spatele unui baraj. Atunci când apa este eliberată, aceasta trece prin conducte speciale și pune în mișcare 
-      turbinele. Turbinele sunt conectate la generatoare electrice, care transformă energia mecanică în energie electrică.
-    </p>
+    <h2>Definiție și principiu de funcționare</h2>
 
     <p>
-      Există mai multe tipuri de hidrocentrale. Hidrocentralele cu acumulare folosesc baraje și lacuri artificiale pentru
-      stocarea apei. Hidrocentralele pe firul apei utilizează direct curgerea naturală a râurilor. De asemenea, există
-      hidrocentrale cu pompaj, care pot stoca energie prin pomparea apei într-un rezervor situat la altitudine mai mare.
+      Hidrocentrala funcționează pe baza transformării mai multor forme de energie. Apa acumulată într-un lac de acumulare deține energie potențială gravitațională datorită înălțimii la care se află. În momentul în care apa este eliberată și începe să curgă, această energie se transformă în energie cinetică. Curentul de apă pune în mișcare o turbină, generând energie mecanică, care este apoi transformată în energie electrică de către un generator.
     </p>
 
     <div class="image_center">
-      <%= image_tag "hydropower-layout.png", alt:"Hydro layout", class: "rounded-xl"%>
+      <%= image_tag "hydropower-layout.png", alt:"Hydro layout", class:"rounded-xl"%>
+    </div>
+
+    <p>
+      Astfel, procesul poate fi rezumat astfel:
+    </p>
+
+    <p>
+      energie potențială → energie cinetică → energie mecanică → energie electrică
+    </p>
+
+    <h2>Tipuri de hidrocentrale</h2>
+
+    <p>
+      Există mai multe tipuri de hidrocentrale, în funcție de modul în care utilizează apa:
+    </p>
+
+    <p>
+      · Hidrocentrale cu acumulare – folosesc baraje pentru a crea lacuri artificiale
+    </p>
+
+    <p>
+      · Hidrocentrale pe firul apei – utilizează curgerea naturală a râurilor
+    </p>
+
+    <p>
+      · Hidrocentrale cu pompaj – pot stoca energie prin pomparea apei înapoi în lacuri superioare
+    </p>
+
+    <h2>Istorie</h2>
+
+    <p>
+      Folosirea apei ca sursă de energie nu este o invenție modernă. Încă din Antichitate, oamenii foloseau roțile hidraulice pentru măcinarea cerealelor sau pentru alte activități mecanice. Dezvoltarea hidrocentralelor moderne a început în secolul al XIX-lea, odată cu apariția generatoarelor electrice.
+    </p>
+
+    <p>
+      Prima hidrocentrală destinată producerii de energie electrică a fost construită în anul 1882, în Statele Unite.
+    </p>
+
+    <h2>Exemple</h2>
+
+    <p>
+      În prezent, există hidrocentrale impresionante la nivel global. De exemplu, barajul Three Gorges Dam din China este cea mai mare hidrocentrală din lume, având o capacitate uriașă de producere a energiei electrice.
+    </p>
+
+    <div class="image_center">
+      <%= image_tag "dam-china.jpeg", alt:"Dam China", class:"rounded-xl"%>
+    </div>
+
+    <p>
+      În România, un exemplu important este sistemul hidroenergetic de la Porțile de Fier, construit pe Dunăre, care asigură o parte semnificativă din energia electrică a țării și reprezintă o colaborare între România și Serbia.
+    </p>
+
+    <div class="image_center">
+      <%= image_tag "dam-romania.jpeg", alt:"Dam Romania", class:"rounded-xl"%>
     </div>
 
     <h2>Avantaje</h2>
 
     <p>
-      · este o sursă regenerabilă și produce foarte puține emisii poluante în timpul funcționării;
+      · Este o sursă regenerabilă de energie
     </p>
 
     <p>
-      · hidrocentralele au costuri relativ mici de exploatare după construirea infrastructurii;
+      · Nu produce poluare atmosferică
     </p>
 
     <p>
-      · pot produce cantități mari de energie electrică într-un mod stabil și sigur;
+      · Are costuri reduse de exploatare după construcție
     </p>
 
     <p>
-      · lacurile de acumulare pot avea și alte utilizări, precum alimentarea cu apă, irigațiile sau prevenirea inundațiilor;
+      · Asigură o producție stabilă de energie
     </p>
 
     <p>
-      · hidrocentralele pot contribui la stabilizarea rețelelor electrice prin reglarea rapidă a producției de energie.
+      · Are o durată lungă de viață
     </p>
 
     <h2>Dezavantaje</h2>
 
     <p>
-      · construirea barajelor și a lacurilor de acumulare poate afecta ecosistemele și poate duce la inundarea unor suprafețe mari de teren;
+      · Costuri mari de construcție
     </p>
 
     <p>
-      · în unele cazuri, comunități întregi au fost relocate pentru realizarea proiectelor hidroenergetice;
+      · Impact asupra mediului (ecosisteme afectate, migrația peștilor)
     </p>
 
     <p>
-      · hidrocentralele depind de condițiile climatice și de cantitatea de precipitații;
+      · Inundarea unor suprafețe mari de teren
     </p>
 
     <p>
-      · perioadele de secetă pot reduce semnificativ producția de energie electrică;
+      · Dependența de condițiile climatice (seceta reduce producția)
     </p>
 
-    <p>
-      · costurile inițiale pentru construcția unei hidrocentrale sunt foarte ridicate și necesită investiții importante.
-    </p>
-
-    <p>
-      La nivel mondial, una dintre cele mai mari hidrocentrale este Barajul Three Gorges din China. Alte state importante în producția de energie hidroelectrică sunt Brazilia, Canada și Norvegia.
-    </p>
-
-    <div class="image_center">
-      <%= image_tag "dam-china.jpeg", alt: "Dam China", class:"rounded-xl"%>
-    </div>
-
-    <p>
-      În România, hidroenergia reprezintă una dintre cele mai importante surse de energie regenerabilă. Sistemul Porțile de Fier de pe Dunăre este unul dintre cele mai mari proiecte hidroenergetice din Europa. România deține numeroase hidrocentrale amplasate pe râuri precum Olt, Argeș, Bistrița și Someș.
-    </p>
-
-    <div class="image_center">
-      <%= image_tag "dam-romania.jpeg", alt: "Dam Romania", class:"rounded-xl" %>
-    </div>
-
-    <p>
-      În concluzie, energia hidroelectrică este o sursă importantă de energie regenerabilă datorită eficienței ridicate și producției stabile de electricitate. Deși construcția hidrocentralelor poate avea impact asupra mediului, avantajele pe termen lung fac din hidroenergie una dintre cele mai utilizate surse de energie verde din lume.
-    </p>
   </div>
 </div>
