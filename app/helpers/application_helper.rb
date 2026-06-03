@@ -35,7 +35,7 @@ module ApplicationHelper
     if request.path.include?("/summary")
       return_to_main
     else
-      link = link_to "Concluzii", summary_path(), class: "nav_links"
+      link = link_to "Concluzie", summary_path(), class: "nav_links"
       link.html_safe
     end
   end
